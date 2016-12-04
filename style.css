@@ -49,3 +49,8 @@ body {
   height: 60px;
   background-color: #EEE;
 }
+
+.fineprint {
+	color: #CCC;
+	font-size: 9;
+}
