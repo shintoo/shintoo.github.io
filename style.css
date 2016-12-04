@@ -3,4 +3,5 @@ a {
 }
 a:hover {
 	color: #777777;
+	text-decoration: none;
 };
