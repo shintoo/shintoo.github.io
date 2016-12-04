@@ -24,9 +24,11 @@
 }
 
 .social {
+	opacity: 0.6;
 	text-decoration: none;
 }
 
 .social:hover {
+	opacity: 1;
 	text-decoration: none;
 }
