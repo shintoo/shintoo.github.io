@@ -7,60 +7,79 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/effects.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <div class="jumbotron text-center">
-      <h1>Sean Rapp</h1>
-      <p class="header">Programmer, etc.</p> 
-    </div>
-
-    <div class="container about-me">
-      <h2 class="text-center header">About Me</h2>
-      <h4>Hello! My name's Sean.</h4>
-      <p>
-        I'm a software developer studying Computer Science at the University of Central Florida. I spend most of my time making something, or looking for what to make next.
-      </p>
-    </div>
-
-    <div class="container projects">
-      <h2 class="text-center header">Projects</h2>
-      <div class="row holder">
-        <div class="col-sm-4 hover item-fade">
-          <a href="https://github.com/shintoo/Saturn" class="hover">
-            <div class="panel panel-default">
-              <div class="panel-body text-center">
-                <h3>Saturn</h3>
-                <p>Interpreted programming language built in C.</p>
-                <img src="assets/saturn.png" alt="Saturn-img">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-4 hover item-fade">
-          <a href="https://github.com/BillingEmail/Drawblade" class="hover">
-            <div class="panel panel-default">
-              <div class="panel-body text-center">
-                <h3>Drawblade</h3>
-                <p>2D Platformer built with SDL in C.</p>
-                <img src="assets/drawblade.png" alt="Drawblade-img">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-4 hover item-fade">
-          <a href="https://github.com/shintoo/PL0" class="hover">
-            <div class="panel panel-default">
-              <div class="panel-body text-center">
-                <h3> PL/0 Compiler</h3>
-                <p> Compiler for the PL/0 language built in C.</p>
-                <img src="assets/pl0.png" alt="PL0-img">
-              </div>
-            </div>
-          </a>
+    <div class="jumbotron">
+      <div class="title">
+        <h1>Sean Rapp</h1>
+        <div class="subtitle">
+          Programmer, student, etc.
         </div>
       </div>
+    </div>
+
+    <div class="main">
+      <div class="container scroll-fade">
+        <h2 class="header">About me</h2>
+        <h4>Hello! My name's Sean.</h4>
+        <p>
+          I'm a software developer studying Computer Science at the University of Central Florida.<br>
+          I spend most of my time making something, or looking for what to make next.
+        </p>
+      </div>
+
+      <hr class="breaker">
+
+      <div class="container scroll-fade">
+        <h2 class="header">Projects</h2>
+        <div class="row holder">
+          <div class="col-sm-4 hover item-fade">
+            <a href="https://github.com/shintoo/Saturn" class="hover">
+              <div class="panel panel-default">
+                <div class="panel-head text-center">
+                  <h3>Saturn</h3>
+                </div>
+                <div class="panel-body text-center">
+                  <p>Interpreted language built in C.</p>
+                  <img src="assets/saturn.png" alt="Saturn-img">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4 hover item-fade">
+            <a href="https://github.com/BillingEmail/Drawblade" class="hover">
+              <div class="panel panel-default">
+                <div class="panel-head text-center">
+                  <h3>Drawblade</h3>
+                </div>
+                <div class="panel-body text-center">
+                  <p>2D Platformer built with SDL in C.</p>
+                  <img src="assets/drawblade.png" alt="Drawblade-img">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4 hover item-fade">
+            <a href="https://github.com/shintoo/PL0" class="hover">
+              <div class="panel panel-default">
+                <div class="panel-head text-center">
+                  <h3> PL/0 Compiler</h3>
+                </div>
+                <div class="panel-body text-center">
+                  <p> Compiler for the PL/0 language built in C.</p>
+                  <img src="assets/pl0.png" alt="PL0-img">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="breaker">
+
     </div>
 
     <footer class="footer">

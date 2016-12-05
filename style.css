@@ -3,13 +3,6 @@
 	text-decoration: none;
 }
 
-hr {
-    border-width: 1px;
-    background-color: #FFF;
-    color: #777;
-    border-top-color: #EEE;
-}
-
 .header {
 	color: #777;
 }
@@ -21,15 +14,33 @@ hr {
     height: 100%;
     background-size: cover;
     overflow: hidden;
+    color: #fff;
 }
 
-.about-me {
-	color: #777;
-	width: 66%;
+.title {
+	margin-left: 10%;
 }
 
-.projects {
+.subtitle {
+	font-family: Helvetica;
+	font-size: 18px;
+}
+
+.breaker {
+	border-width: 25px;
+	background-color: #FFF;
+	color: #FFF;
+	border-top-color: #FFF;
+}
+
+.main {
 	color: #777;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.scroll-fade {
+	opacity: 0;
 }
 
 .item-fade{
@@ -65,7 +76,6 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
 
@@ -73,7 +83,6 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #EEE;
 }
