@@ -77,6 +77,20 @@ body {
   margin-bottom: 60px;
 }
 
+.nav-pills {
+	background-color: #00BCD4;
+	color: #FFF;
+}
+
+a {
+	color: inherit;
+}
+
+.single {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
 .footer {
   position: absolute;
   bottom: 0;

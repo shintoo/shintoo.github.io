@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular-sanitize.min.js"></script>
     <script src="js/effects.js"></script>
+    <script src="js/module.js"></script>
+    <script src="js/tab-controller.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body>
+  <body ng-app="app">
+
     <div class="jumbotron">
       <div class="title">
         <h1>Sean Rapp</h1>
@@ -22,60 +27,23 @@
     </div>
 
     <div class="main">
-      <div class="container scroll-fade">
-        <h2 class="header">About me</h2>
-        <h4>Hello! My name's Sean.</h4>
+      <div class="container scroll-fade text-center"> <!-- About me -->
+        <h2 class="header">Hello! My name's Sean.</h4>
         <p>
           I'm a software developer studying Computer Science at the University of Central Florida.<br>
           I spend most of my time making something, or looking for what to make next.
         </p>
-      </div>
+      </div> <!-- end About me -->
 
       <hr class="breaker">
 
-      <div class="container scroll-fade">
-        <h2 class="header">Projects</h2>
-        <div class="row holder">
-          <div class="col-sm-4 hover item-fade">
-            <a href="https://github.com/shintoo/Saturn" class="hover">
-              <div class="panel panel-default">
-                <div class="panel-head text-center">
-                  <h3>Saturn</h3>
-                </div>
-                <div class="panel-body text-center">
-                  <p>Interpreted language built in C.</p>
-                  <img src="assets/saturn.png" alt="Saturn-img">
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4 hover item-fade">
-            <a href="https://github.com/BillingEmail/Drawblade" class="hover">
-              <div class="panel panel-default">
-                <div class="panel-head text-center">
-                  <h3>Drawblade</h3>
-                </div>
-                <div class="panel-body text-center">
-                  <p>2D Platformer built with SDL in C.</p>
-                  <img src="assets/drawblade.png" alt="Drawblade-img">
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4 hover item-fade">
-            <a href="https://github.com/shintoo/PL0" class="hover">
-              <div class="panel panel-default">
-                <div class="panel-head text-center">
-                  <h3> PL/0 Compiler</h3>
-                </div>
-                <div class="panel-body text-center">
-                  <p> Compiler for the PL/0 language built in C.</p>
-                  <img src="assets/pl0.png" alt="PL0-img">
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
+      <div ng-controller="TabController">
+        <ul class="nav nav-pills nav-justified">
+          <li role="presentation" ng-class="experienceTabActive()" ng-click="experience()"><a href="javascript:void(0);">Experience</a></li>
+          <li role="presentation" ng-class="projectsTabActive()"   ng-click="projects()"  ><a href="javascript:void(0);">Projects</a></li>
+          <li role="presentation" ng-class="educationTabActive()"  ng-click="education()" ><a href="javascript:void(0);">Education</a></li>
+        </ul>
+        <span ng-bind-html="currentTab()"></span>
       </div>
 
       <hr class="breaker">
@@ -84,25 +52,24 @@
 
     <footer class="footer">
       <p>
-      <center>
-        <a href="mailto:seanprapp@gmail.com" class="social">
-          <img src="assets/mail.png" width="16" height="16" alt="email">
-        </a>
-        &nbsp;
-        <a href="https://www.linkedin.com/in/sean-rapp-48a09b110" class="social">
-          <img src="assets/in.svg" width="16" height="16" alt="linkedin">
-        </a>
-        &nbsp;
-        <a href="https://github.com/shintoo" class="social">
-          <img src="assets/github.svg" width="16" height="16" alt="github">
-        </a>
-        <p class="fineprint">
-          Built by Sean Rapp
-        </p>
-      </center>
-    </p>
+        <center>
+          <a href="mailto:seanprapp@gmail.com" class="social">
+            <img src="assets/mail.png" width="16" height="16" alt="email">
+          </a>
+          &nbsp;
+          <a href="https://www.linkedin.com/in/sean-rapp-48a09b110" class="social">
+            <img src="assets/in.svg" width="16" height="16" alt="linkedin">
+          </a>
+          &nbsp;
+          <a href="https://github.com/shintoo" class="social">
+            <img src="assets/github.svg" width="16" height="16" alt="github">
+          </a>
+          <p class="fineprint">
+            Built by Sean Rapp
+          </p>
+        </center>
+      </p>
     </footer>
-
 
   </body>
 </html>
