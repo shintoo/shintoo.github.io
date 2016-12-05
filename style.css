@@ -3,6 +3,13 @@
 	text-decoration: none;
 }
 
+hr {
+    border-width: 1px;
+    background-color: #FFF;
+    color: #777;
+    border-top-color: #EEE;
+}
+
 .header {
 	color: #777;
 }
@@ -19,6 +26,10 @@
 .about-me {
 	color: #777;
 	width: 66%;
+}
+
+.projects {
+	color: #777;
 }
 
 .item-fade{
