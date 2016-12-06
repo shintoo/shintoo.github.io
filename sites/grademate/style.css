@@ -1,8 +1,8 @@
 .jumbotron {
     position: relative;
-    background: #EEE url("assets/jumbotron-bg.png") center center;
+    background: #EEE url("../../assets/jumbotron-bg.png") center center;
     width: 100%;
-    height: 50%;
+    height: 100%;
     background-size: cover;
     overflow: hidden;
     color: #fff;
@@ -11,9 +11,4 @@
 
 .input-box {
 	width: 60px;
-}
-
-.nav-pills {
-	background-color: #4CAF50;
-	color: #FFF;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>GradeMate</title>
+    <title>Sean Rapp | GradeMate</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,53 +14,62 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-    <body ng-app="GradeMate">
-    
-        <div class="jumbotron">
-            <div class="header">
-                <h1>GradeMate</h1>
-                <div class="subtitle">
-                    How well are you doing?
-                </div>
-            </div>
+  <body ng-app="GradeMate">
+    <div class="jumbotron">
+      <div class="header">
+        <h1>Sean Rapp</h1>
+        <div class="subtitle">
+          Programmer, student, etc.
         </div>
+      </div>
+    </div>
 
-        <ul class="nav nav-pills nav-justified">
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="index.html" class="active">GradeMate</a></li>
-        </ul>
+    <ul class="nav nav-pills nav-justified">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="index.html" class="active">GradeMate</a></li>
+    </ul>
 
-        <hr class="spacer">
+    <hr class="spacer">
 
-        <div class="container" ng-controller="GradeController">
-            <table class="table">
-                <tr>
-                    <th>Earned</th>
-                    <th>Possible</th>
-                    <th>Weight</th>
-                </tr>
+    <div class="main">
+      <div class="container text-center">
+        <h2 class="title">GradeMate</h2>
+        <p>How well are you doing?</p>
+      </div>
 
-                <tr ng-repeat="grade in grades">
-                    <td><input type="text" ng-model="grade.points" class="input-box"></td>
-                    <td><input type="text" ng-model="grade.possible" value="Possible" class="input-box"></td>
-                    <td><input type="text" ng-model="grade.weight" value="Weight" class="input-box">% &nbsp;
-                    <input type="button" value="Remove" ng-click="remove($index)"></td>
-                </tr>
-                <tr>
-                    <td><input type="button" value="Add" ng-click="addGrade()"></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Final Grade</td>
-                    <td></td>
-                    <Td><span ng-bind="'&nbsp;' + (finalGrade() | number: 2) + '%'"></span>
-                </tr>
-            </table>
+      <hr class="spacer">
+
+      <div class="container" ng-controller="GradeController">
+        <table class="table">
+          <tr>
+            <th>Earned</th>
+            <th>Possible</th>
+            <th>Weight</th>
+            </tr>
+            <tr ng-repeat="grade in grades">
+              <td><input type="text" ng-model="grade.points" class="input-box"></td>
+              <td><input type="text" ng-model="grade.possible" value="Possible" class="input-box"></td>
+              <td>
+                <input type="text" ng-model="grade.weight" value="Weight" class="input-box">% &nbsp;
+                <input type="button" value="Remove" ng-click="remove($index)">
+              </td>
+            </tr>
+            <tr>
+              <td><input type="button" value="Add" ng-click="addGrade()"></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Final Grade</td>
+              <td></td>
+              <Td><span ng-bind="'&nbsp;' + (finalGrade() | number: 2) + '%'"></span>
+            </tr>
+          </table>
         </div>
+      </div>
 
-    <footer class="footer">
-      <p>
+      <footer class="footer">
+        <p>
         <center>
           <a href="mailto:seanprapp@gmail.com" class="social">
             <img src="../../assets/mail.png" width="16" height="16" alt="email">
