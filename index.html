@@ -9,8 +9,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular-sanitize.min.js"></script>
-    <script src="js/effects.js"></script>
-    <script src="js/module.js"></script>
     <script src="js/tab-controller.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -27,7 +25,7 @@
     </div>
 
     <ul class="nav nav-pills nav-justified">
-      <li><a href="index.html" class="active">Home</a></li>
+      <li class="active"><a href="index.html">Home</a></li>
       <li><a href="sites/grademate/index.html">GradeMate</a></li>
     </ul>
 
@@ -44,17 +42,109 @@
 
       <hr class="spacer">
 
-      <div ng-controller="TabController">
-        <ul class="nav nav-pills nav-justified">
-          <li role="presentation" ng-class="experienceTabActive()" ng-click="experience()"><a href="javascript:void(0);">Experience</a></li>
-          <li role="presentation" ng-class="projectsTabActive()"   ng-click="projects()"  ><a href="javascript:void(0);">Projects</a></li>
-          <li role="presentation" ng-class="educationTabActive()"  ng-click="education()" ><a href="javascript:void(0);">Education</a></li>
+      <div class="tabbable">
+        <ul id="myTab" class="nav nav-tabs nav-justified">
+          <li>               <a href="#tab1" data-toggle="tab">Experience</a></li>
+          <li class="active"><a href="#tab2" data-toggle="tab">Projects</a></li>
+          <li>               <a href="#tab3" data-toggle="tab">Education</a></li>
         </ul>
-        <span ng-bind-html="currentTab()"></span>
+        <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade" id="tab1">
+            <div class="container">
+              <hr class="breaker">
+              <div class="single holder">
+                <div class="hover item-fade">
+                  <div class="hover">
+                    <a href="http://lockheedmartin.com/" class="hover">
+                      <div class="panel panel-default">
+                        <div class="panel-head text-center">
+                          <h3>Lockheed Martin</h3>
+                          <br>
+                          <h5>Systems Engineer</h5>
+                        </div>
+                        <div class="panel-body text-center">
+                    <p>Software configuration, unit testing,      documentation, hardware compatibility.</p>
+                    <img src="assets/lm.png"  width="255" alt="     Lockheed-Martin-img">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade  in active" id="tab2">
+            <div class="container"> 
+              <hr class="breaker"> 
+              <div class="row holder"> 
+                <div class="col-sm-4 hover item-fade"> 
+                  <a href="https://github.com/shintoo/Saturn" class="hover">
+                    <div class="panel panel-default"> 
+                      <div class="panel-head text-center"> 
+                        <h3>Saturn</h3> 
+                      </div> 
+                      <div class="panel-body text-center"> 
+                        <p>Interpreted language built in C.</p> 
+                        <img src="assets/saturn.png" alt="Saturn-img">
+                      </div> 
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-4 hover item-fade">
+                  <a href="https://github.com/BillingEmail/Drawblade" class="hover">
+                    <div class="panel panel-default">
+                      <div class="panel-head text-center">
+                        <h3>Drawblade</h3>
+                      </div>
+                      <div class="panel-body text-center">
+                        <p>2D Platformer built with SDL in C.</p>
+                        <img src="assets/drawblade.png" alt="Drawblade-img">
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-4 hover item-fade">
+                  <a href="https://github.com/shintoo/PL0" class="hover">
+                    <div class="panel panel-default">
+                      <div class="panel-head text-center">
+                        <h3> PL/0 Compiler</h3>
+                      </div>
+                      <div class="panel-body text-center">
+                        <p> Compiler for the PL/0 language built in C.</p>
+                        <img src="assets/pl0.png" alt="PL0-img">
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab3">
+            <div class="container">
+              <hr class="breaker">
+              <div class="single holder">
+                <div class="hover item-fade">
+                  <div class="hover">
+                    <a href="https://www.ucf.edu/" class="hover">
+                      <div class="panel panel-default">
+                        <div class="panel-head text-center">
+                          <h3>University of Central Florida</h3>
+                          <br>
+                          <h5>Computer Science</h5>
+                        </div>
+                        <div class="panel-body text-center">
+                          <p></p>
+                    <img src="assets/ucf.png"  width="255" alt="ucf-      img">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
-
       <hr class="spacer">
-
     </div>
 
     <footer class="footer">
