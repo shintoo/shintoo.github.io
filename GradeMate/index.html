@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grade Mate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular-sanitize.min.js"></script>
+    <script src="js/module.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+    <body ng-app="GradeMate">
+    
+        <div class="jumbotron">
+            <h1 class="header">GradeMate</h1>
+        </div>
+
+        <div class="container" ng-controller="GradeController">
+            <table class="table">
+                <tr>
+                    <th>Earned</th>
+                    <th>Possible</th>
+                    <th>Weight</th>
+                </tr>
+
+                <tr ng-repeat="grade in grades">
+                    <td><input type="text" ng-model="grade.points"></td>
+                    <td><input type="text" ng-model="grade.possible" value="Possible"></td>
+                    <td><input type="text" ng-model="grade.weight" value="Weight">
+                    <input type="button" value="Remove" ng-click="remove($index)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Add Assignment" ng-click="addGrade()">
+                </tr>
+            </table>
+
+            Final grade: {{finalGrade()}}%
+        </div>
+    </body>
+</html>
