@@ -44,13 +44,13 @@
           <tr>
             <th>Earned</th>
             <th>Possible</th>
-            <th>Weight</th>
+            <th>Weight (%)</th>
             </tr>
             <tr ng-repeat="grade in grades">
-              <td><input type="text" ng-model="grade.points" class="input-box"></td>
-              <td><input type="text" ng-model="grade.possible" value="Possible" class="input-box"></td>
+              <td><input type="text" ng-model="grade.points" class="input-box" ng-click="grade.points=''"></td>
+              <td><input type="text" ng-model="grade.possible" value="Possible" class="input-box" ng-click="grade.possible=''"></td>
               <td>
-                <input type="text" ng-model="grade.weight" value="Weight" class="input-box">% &nbsp;
+                <input type="text" ng-model="grade.weight" value="Weight" class="input-box" ng-click="grade.weight=''"> &nbsp;
                 <input type="button" value="Remove" ng-click="remove($index)">
               </td>
             </tr>
