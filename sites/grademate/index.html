@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Grade Mate</title>
+    <title>GradeMate</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,14 +10,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular-sanitize.min.js"></script>
     <script src="js/module.js"></script>
+    <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="style.css">
   </head>
 
     <body ng-app="GradeMate">
     
         <div class="jumbotron">
-            <h1 class="header">GradeMate</h1>
+            <div class="header">
+                <h1>GradeMate</h1>
+                <div class="subtitle">
+                    How well are you doing?
+                </div>
+            </div>
         </div>
+
+        <ul class="nav nav-pills nav-justified">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="index.html" class="active">GradeMate</a></li>
+        </ul>
+
+        <hr class="spacer">
 
         <div class="container" ng-controller="GradeController">
             <table class="table">
@@ -28,19 +41,43 @@
                 </tr>
 
                 <tr ng-repeat="grade in grades">
-                    <td><input type="text" ng-model="grade.points" width="100"></td>
-                    <td><input type="text" ng-model="grade.possible" value="Possible" width="100"></td>
-                    <td><input type="text" ng-model="grade.weight" value="Weight" width="100">% &nbsp;
+                    <td><input type="text" ng-model="grade.points" class="input-box"></td>
+                    <td><input type="text" ng-model="grade.possible" value="Possible" class="input-box"></td>
+                    <td><input type="text" ng-model="grade.weight" value="Weight" class="input-box">% &nbsp;
                     <input type="button" value="Remove" ng-click="remove($index)"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="Add Assignment" ng-click="addGrade()"></td>
+                    <td><input type="button" value="Add" ng-click="addGrade()"></td>
                     <td></td>
                     <td></td>
                 </tr>
+                <tr>
+                    <td>Final Grade</td>
+                    <td></td>
+                    <Td><span ng-bind="'&nbsp;' + (finalGrade() | number: 2) + '%'"></span>
+                </tr>
             </table>
-
-            Final grade: {{finalGrade()}}%
         </div>
+
+    <footer class="footer">
+      <p>
+        <center>
+          <a href="mailto:seanprapp@gmail.com" class="social">
+            <img src="../../assets/mail.png" width="16" height="16" alt="email">
+          </a>
+          &nbsp;
+          <a href="https://www.linkedin.com/in/sean-rapp-48a09b110" class="social">
+            <img src="../../assets/in.svg" width="16" height="16" alt="linkedin">
+          </a>
+          &nbsp;
+          <a href="https://github.com/shintoo" class="social">
+            <img src="../../assets/github.svg" width="16" height="16" alt="github">
+          </a>
+          <p class="fineprint">
+            Built by Sean Rapp
+          </p>
+        </center>
+      </p>
+    </footer>
     </body>
 </html>

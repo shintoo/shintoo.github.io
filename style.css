@@ -3,10 +3,6 @@
 	text-decoration: none;
 }
 
-.header {
-	color: #777;
-}
-
 .jumbotron {
     position: relative;
     background: #EEE url("assets/jumbotron-bg.png") center center;
@@ -15,9 +11,10 @@
     background-size: cover;
     overflow: hidden;
     color: #fff;
+    margin-bottom: 0;
 }
 
-.title {
+.header {
 	margin-left: 5%;
 }
 
@@ -26,7 +23,7 @@
 	font-size: 18px;
 }
 
-.breaker {
+.spacer {
 	border-width: 25px;
 	background-color: #FFF;
 	color: #FFF;

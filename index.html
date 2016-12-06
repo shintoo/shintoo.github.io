@@ -18,13 +18,20 @@
   <body ng-app="app">
 
     <div class="jumbotron">
-      <div class="title">
+      <div class="header">
         <h1>Sean Rapp</h1>
         <div class="subtitle">
           Programmer, student, etc.
         </div>
       </div>
     </div>
+
+    <ul class="nav nav-pills nav-justified">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="sites/grademate/index.html">GradeMate</a></li>
+    </ul>
+
+    <hr class="spacer">
 
     <div class="main">
       <div class="container scroll-fade text-center"> <!-- About me -->
@@ -35,7 +42,7 @@
         </p>
       </div> <!-- end About me -->
 
-      <hr class="breaker">
+      <hr class="spacer">
 
       <div ng-controller="TabController">
         <ul class="nav nav-pills nav-justified">
