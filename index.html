@@ -1,152 +1,682 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Sean Rapp | Home</title>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
+    <title>Sean Rapp</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular-sanitize.min.js"></script>
-    <script src="js/tab-controller.js"></script>
-    <link rel="stylesheet" href="style.css">
-  </head>
 
-  <body ng-app="app">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    <div class="jumbotron">
-      <div class="header">
-        <h1>Sean Rapp</h1>
-        <div class="subtitle">
-          Programmer, student, etc.
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html"><img src="images/logo.png" alt="Homepage"></a>
         </div>
-      </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                <li><a class="smoothscroll"  href="#works" title="works">Projects</a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+   <!-- home
+   ================================================== -->
+   <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/lionking.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Hello!</h3>
+
+                <h1>
+                    I'm Sean Rapp, <br>
+                    a software engineer <br>
+                    based in Orlando, Florida.
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#works" class="smoothscroll btn btn--stroke">
+                        Latest Projects
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        More About Me
+                    </a>
+                </div>
+
+                <div class="home-content__scroll">
+                    <a href="#about" class="scroll-link smoothscroll">
+                        <span>Scroll</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div> <!-- end home-content -->
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+        
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h3>About</h3>
+                <h1>More About Me</h1>
+                <p class="lead">I'm a student at the University of Central Florida, soon to graduate with a degree in Computer Science.</p>
+            </div>
+        </div>
+
+        <div class="row about-content">
+
+            <div class="col-six tab-full left">
+                <h3>Hello!</h3>
+
+                <p>With regards to technology and computer science, I am passionate about a number of things. Things that really get me excited include
+                robots,  artificial intelligence, and embedded software. (I also quite like nature, space, and music.) </p>
+
+                <p>I like to design projects from start to finish, beginning with pen and paper, then scouting for tools and developing the overall
+                architecture of a project. 
+                </p>
+
+            </div>
+
+            <div class="col-six tab-full right">
+                <h3>Skills</h3>
+
+                <ul class="skill-bars">
+                    <li>
+                    <div class="progress percent80"><span>80%</span></div>
+                    <strong>C/C++</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent85"><span>85%</span></div>
+                    <strong>Python</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>Java</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent80"><span>80%</span></div>
+                    <strong>Linux</strong>
+                    </li> 
+                    <li>
+                    <div class="progress percent75"><span>75%</span></div>
+                    <strong>AI and Machine Learning</strong>
+                    </li>
+                </ul>
+            </div>
+
+        </div> <!-- end about-content -->
+
+        <div class="row about-content about-content--buttons">
+
+            <div class="col-six tab-full left">
+                <a href="SeanRapp-Resume.pdf" class="btn btn--primary full-width">Download My CV</a>
+            </div>
+            <div class="col-six tab-full right">
+                <a href="mailto:seanprapp@gmail.com" class="btn btn--secondary full-width">Shoot An Email</a>
+            </div>
+
+        </div> <!-- end about-content buttons -->
+
+        <div class="row about-content about-content--timeline">
+
+            <div class="col-full text-center">
+                <h3>My Work Experience</h3>
+            </div>
+
+            <div class="col-six tab-full right">
+                <div class="timeline">
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">September 2018 - Present</p>
+                            <h3>National Aeronautics and Space Administration</h3>
+                            <h5>Software Engineer Intern</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>At Kennedy Space Center, I work with the Swamp Works team to develop software for an autonomous excavation robot. Programming the
+                            driver station desktop application and putting together the simulation have been really exciting projects, and I've been learning
+                            a lot about robot control systems.</p>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">May 2016 - August 2016</p>
+                            <h3>Lockheed Martin</h3>
+                            <h5>Systems Engineer Intern</h5>
+                        </div>
+                        <div class="timeline__desc">	
+                            <p>At Rotary and Mission Systems, I worked closely with the software engineers developing training simulations for pilots. I installed and configued flight simulation set-ups, maintained installation and testing documentation, and built a test suite for
+                            the newly-developed simulation functions.</p>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                </div> <!-- end timeline -->
+            </div> <!-- end left -->
+
+            <div class="col-six tab-full right">
+
+            </div> <!-- end left -->
+
+        </div> <!-- end about-content timeline -->
+
+    </section> <!-- end about -->
+    
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full">
+                <h3>Portfolio</h3>
+                <h1>My Latest Projects</h1>
+                
+                <p class="lead">While usually interesting, computer science coursework isn't always enough of an outlet for a need to create, so sometimes I like to make projects of my own. Here are a few.</p>
+            </div>
+        </div>
+
+        <div class="row masonry-wrap">
+            <div class="masonry">
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-beetle.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                                <img src="images/portfolio/beetle.jpg" 
+                                     srcset="images/portfolio/beetle.jpg 1x, images/portfolio/beetle@2x.jpg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Saturn
+                            </h3>
+                            <p class="item-folio__cat">
+                                Interpreted programming language
+                            </p>
+                        </div>
+
+                        <a href="https://github.com/shintoo/Saturn" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>An interpreted programming language built in C. With minimal syntax, it can be learned in a matter of minutes. Writing
+                            programs in it is a fun challenge.</p>
+                        </div>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-lighthouse.jpg" class="thumb-link" title="Lighthouse" data-size="1050x700">
+                                <img src="images/portfolio/lighthouse.jpg" 
+                                     srcset="images/portfolio/lighthouse.jpg 1x, images/portfolio/lighthouse@2x.jpg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Sidra
+                            </h3>
+                            <p class="item-folio__cat">
+                                Virtual assistant
+                            </p>
+                        </div>
+
+                        <a href="https://github.com/shintoo/Sidra" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>A simple AI built in Python with basic memory and inferencing. With easy plug-and-play functionality for user customization of interactions, it ships with the usual: weather checking, reminders, and of course, jokes.</p>
+                        </div>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-salad.jpg" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/salad.jpg" 
+                                     srcset="images/portfolio/salad.jpg 1x, images/portfolio/salad@2x.jpg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Shapes
+                            </h3>
+                            <p class="item-folio__cat">
+                                Action-RPG for Android
+                            </p>
+                        </div>
+
+                        <a href="https://github.com/Agalon-Studios/Shapes-2-Return-Of-Agalon" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>A simple top-down game, with an engine built from scratch in Java. It's main attraction are the procedurally-generated dungeons,
+                            with cave systems, enemy mobs, and treasure chests.</p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/woodcraft.jpg"
+                                     srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                PL/0 Compiler
+                            </h3>
+                            <p class="item-folio__cat">
+                                Procedural program compiler
+                            </p>
+                        </div>
+
+                        <a href="https://github.com/shintoo/PL0" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>A compiler for the PL/0 general-purpose programming language, using a home-grown recursive descent parser built in C.</p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-skaterboy.jpg" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/skaterboy.jpg"
+                                     srcset="images/portfolio/skaterboy.jpg 1x, images/portfolio/skaterboy@2x.jpg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Meikai University Brochure
+                            </h3>
+                            <p class="item-folio__cat">
+                                Graphic design
+                            </p>
+                        </div>
+
+                        <span class="item-folio__caption">
+                            <p>A small brochure to advertise UCF's study abroad program to Meikai University in Chiba, Japan.</p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-liberty.jpg" class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/liberty.jpg"
+                                     srcset="images/portfolio/liberty.jpg 1x, images/portfolio/liberty@2x.jpg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Drawblade
+                            </h3>
+                            <p class="item-folio__cat">
+                                2D platformer game
+                            </p>
+                            <p class="item-folio__cat">My first major project, built with my own 2D game engine written from scratch in C.</p>
+                        </div>
+
+                        <a href="https://github.com/BillingEmail/Drawblade" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <span class="item-folio__caption">
+                            <p>My first major project, built with my own 2D game engine written from scratch in C.</p>
+                        </span>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+            </div>
+        </div> <!-- end masonry -->
+
+    </section> <!-- end works -->
+
+<!--
+
+    <!- - testimonials
+    ================================================== - ->
+    <div class="s-testimonials">
+
+        <div class="overlay"></div>
+
+        <div class="row testimonials-header">
+            <div class="col-full">
+                <h1 class="h02">What People Say.</h1>
+            </div>
+        </div>
+
+        <div class="row testimonials">
+
+            <div class="col-full testimonials__slider">
+
+                <div class="testimonials__slide">
+                    <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                    <p>Qui ipsam temporibus quisquam velMaiores eos cumque distinctio nam accusantium ipsum. 
+                    Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.</p>
+                    <div class="testimonials__author h06">
+                        Tim Cook
+                        <span>CEO, Apple</span>
+                    </div>
+                </div>
+
+                <div class="testimonials__slide">
+                    <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
+                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                    Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
+                    <div class="testimonials__author h06">
+                        Sundar Pichai
+                        <span>CEO, Google</span>
+                    </div>
+                </div>
+
+                <div class="testimonials__slide">
+                    <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                    <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
+                    <div class="testimonials__author h06">
+                        Satya Nadella
+                        <span>CEO, Microsoft</span>
+                    </div>
+                </div>
+                
+            </div> <!- - end testimonials__slider - ->
+
+        </div> <! - - end testimonials - ->
+
+    </div> <! - - end s-testimonials - ->
+-- >
+
+    <!-- blog
+    ================================================== - ->
+    <section id="blog" class="s-blog target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full">
+                <h3>Journal</h3>
+                <h1>Latest From The Blog.</h1>
+                <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute. 
+                Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum 
+                ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
+            </div>
+        </div>
+
+        <div class="row blog-content">
+            <div class="col-full">
+
+                <div class="blog-list block-1-2 block-tab-full">
+                    <article class="col-block">
+                                
+                        <div class="blog-date">
+                            <a href="blog-single.html">Sept 16, 2017</a>
+                        </div>  
+                        
+                        <h2 class="h01"><a href="blog-single.html">The 10 Golden Rules of Clean Simple Design.</a></h2>
+                        <p>
+                        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh..
+                        </p>
+
+                        <div class="blog-cat">
+                                <a href="blog.html">Branding</a><a href="blog.html">Design</a>
+                        </div>
+
+                        
+                    </article>
+                    <article class="col-block">
+                                
+                        <div class="blog-date">
+                            <a href="blog-single.html">Sept 15, 2017</a>
+                        </div>  
+                        
+                        <h2 class="h01"><a href="blog-single.html">Photography Can Improve Your Graphic Design.</a></h2>
+                        <p>
+                        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh..
+                        </p>
+
+                        <div class="blog-cat">
+                            <a href="blog.html">Photography</a>
+                        </div>
+
+                        
+                    </article>
+                    <article class="col-block">
+                        
+                        <div class="blog-date">
+                            <a href="blog-single.html">Sept 14, 2017</a>
+                        </div>
+
+                        <h2 class="h01"><a href="blog-single.html">Workspace Design Trends and Ideas.</a></h2>
+                        <p>
+                        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh dolore irure esse Duis nulla sint.
+                        </p>
+
+                        <div class="blog-cat">
+                            <a href="blog.html">Branding</a><a href="blog.html">Wordpress</a>
+                        </div>
+                    </article>
+                    <article class="col-block">
+                        
+                        <div class="blog-date">
+                            <a href="blog-single.html">Sept 12, 2017</a>
+                        </div>    
+                        <h2 class="h01"><a href="blog-single.html">Using Patterns in your Branding.</a></h2>
+                        <p>
+                        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh.
+                        </p>
+
+                        <div class="blog-cat">
+                            <a href="blog.html">Design</a><a href="blog.html">Branding</a>
+                        </div>
+                    </article>
+                </div> <!- - end blog-list - ->
+
+            </div> <!- - end col-full - ->
+        </div> <!- - end blog-content - ->
+
+    </section> <!- - end s-blog -->
+
+
+    <!-- s-stats
+    ================================================== -->
+    <section id="stats" class="s-stats">
+        <div class="row block-1-3 block-tab-1-2 block-mob-full stats">
+
+            <div class="col-block stats__col ">
+                <div class="stats__count">
+                    16500
+                </div>
+                <h4>Lines of Code on GitHub</h4>
+            </div>
+            <div class="col-block">
+                <a href="https://github.com/shintoo"><img src="images/GitHub-Logo.png"/></a>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">
+                    800
+                </div>
+                <h4>Commits on GitHub</h4>
+            </div>
+        </div>
+    </section> <!-- end s-stats -->
+
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="col-full">
+                <div class="footer-logo">
+                    <a class="footer-site-logo" href="#0"><img src="images/logo.png" alt="Homepage"></a>
+                </div>
+
+                <ul class="footer-social">
+                    <li><a href="https://github.com/shintoo">
+                        <i class="im im-facebook" aria-hidden="true"></i>
+                        <span>GitHub</span>
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/sean-rapp-48a09b110/">
+                        <i class="im im-twitter" aria-hidden="true"></i>
+                        <span>LinkedIn</span>
+                    </a></li>
+                </ul>
+                    
+            </div>
+        </div>
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Hola 2017</span> 
+                    <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span>	
+                </div>
+
+                <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
 
-    <!--
-    <ul class="nav nav-pills nav-justified">
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="sites/grademate/index.html">GradeMate</a></li>
-    </ul>
-    -->
-    <hr class="spacer outer">
 
-    <div class="main outer">
-      <div class="container text-center"> <!-- About me -->
-        <h2 class="title">Hello! My name's Sean.</h2>
-        <p>
-          I'm a software developer studying Computer Science at the University of Central Florida.<br>
-          I spend most of my time making something, or looking for what to make next.
-        </p>
-      </div> <!-- end About me -->
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-      <hr class="spacer outer">
+</body>
 
-      <div class="container">
-      <div class="tabbable"> <!-- Tabs -->
-        <ul id="myTab" class="nav nav-tabs nav-justified">
-          <li>               <a href="#tab1" data-toggle="tab">Experience</a></li>
-          <li class="active"><a href="#tab2" data-toggle="tab">Projects</a></li>
-          <li>               <a href="#tab3" data-toggle="tab">Education</a></li>
-        </ul>
-        <div id="myTabContent" class="tab-content inner">
-          <div class="tab-pane fade holder hover item-fade" id="tab1"> <!-- Experience -->
-            <a href="http://lockheedmartin.com/" class="hover">
-              <div class="panel panel-default">
-                <div class="panel-head text-center">
-                  <h3>Lockheed Martin</h3>
-                  <br>
-                  <h5>Systems Engineer</h5>
-                </div>
-                <div class="panel-body text-center">
-                  <p>Software configuration, unit testing, documentation, hardware compatibility.</p>
-                  <img src="assets/lm.png"  width="255" alt="Lockheed-Martin-img">
-                </div>
-              </div>
-            </a>
-          </div> <!-- /Experience -->
-          <div class="tab-pane fade in active" id="tab2"> <!-- Projects -->
-            <div class="row center padder">
-            <div class="col-sm-4 hover item-fade"> <!-- Saturn -->
-              <a href="https://github.com/shintoo/Saturn" class="hover">
-                <div class="panel panel-default"> 
-                  <div class="panel-head text-center"> 
-                    <h3>Saturn</h3> 
-                  </div> 
-                  <div class="panel-body text-center"> 
-                    <p>Interpreted language built in C.</p> 
-                    <img src="assets/saturn.png" alt="Saturn-img">
-                  </div> 
-                </div>
-              </a>
-            </div> <!-- /Saturn -->
-            <div class="col-sm-4 hover item-fade"> <!-- Drawblade -->
-              <a href="https://github.com/BillingEmail/Drawblade" class="hover">
-                <div class="panel panel-default">
-                  <div class="panel-head text-center">
-                    <h3>Drawblade</h3>
-                  </div>
-                  <div class="panel-body text-center">
-                    <p>2D Platformer built with SDL in C.</p>
-                    <img src="assets/drawblade.png" alt="Drawblade-img">
-                  </div>
-                </div>
-              </a>
-            </div> <!-- /Drawblade -->
-            <div class="col-sm-4 hover item-fade"> <!-- PL0 -->
-              <a href="https://github.com/shintoo/PL0" class="hover">
-                <div class="panel panel-default">
-                  <div class="panel-head text-center">
-                    <h3> PL/0 Compiler</h3>
-                  </div>
-                  <div class="panel-body text-center">
-                    <p> Compiler for the PL/0 language built in C.</p>
-                    <img src="assets/pl0.png" alt="PL0-img">
-                  </div>
-                </div>
-              </a>
-              </div>
-            </div>
-          </div> <!-- /PL0 -->
-          <div class="tab-pane fade holder hover item-fade" id="tab3"> <!-- Education -->
-            <a href="https://www.ucf.edu/" class="hover">
-              <div class="panel panel-default">
-                <div class="panel-head text-center">
-                  <h3>University of Central Florida</h3>
-                  <br>
-                  <h5>Computer Science</h5>
-                </div>
-                <div class="panel-body text-center">
-                  <p></p>
-                  <img src="assets/ucf.png" width="255" alt="ucf-img">
-                </div>
-              </div>
-            </a>
-          </div> <!-- /Education -->
-          <hr class="spacer inner">
-        </div>
-      </div>
-      </div>
-
-    <footer class="footer text-center outer">
-      <br>
-      <p>
-        <a href="mailto:seanprapp@gmail.com" class="social">
-          <img src="assets/mail.png" width="16" height="16" alt="email">
-        </a>
-        &nbsp;
-        <a href="https://www.linkedin.com/in/sean-rapp-48a09b110" class="social">
-          <img src="assets/in.svg" width="16" height="16" alt="linkedin">
-        </a>
-        &nbsp;
-        <a href="https://github.com/shintoo" class="social">
-          <img src="assets/github.svg" width="16" height="16" alt="github">
-        </a>
-        <p class="fineprint">
-          Built by Sean Rapp
-        </p>
-      </p>
-    </footer>
-  </body>
 </html>
