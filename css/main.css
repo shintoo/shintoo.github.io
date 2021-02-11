@@ -2254,8 +2254,20 @@ html.no-csstransitions .home-content__main {
 .timeline__block {
     position: relative;
     padding-left: 8rem;
+    padding-bottom: 4rem;
     min-height: 28.8rem;
 }
+
+.meme {
+    padding-top: 8rem;
+}
+
+.skill_icon {
+    width: 50%;
+    height: 50%;
+    margin: 2rem;
+}
+
 
 .timeline__bullet {
     background: #0D0A0B;
@@ -3395,17 +3407,19 @@ footer a:hover, footer a:focus {
 .footer-bottom {
     margin-top: 7.2rem;
     text-align: center;
+    color: #111;
 }
 
 .footer-bottom .copyright span {
     display: inline-block;
+    color: #111;
 }
 
 .footer-bottom .copyright span::after {
     content: "|";
     display: inline-block;
     padding: 0 1rem 0 1.2rem;
-    color: rgba(255, 255, 255, 0.1);
+    color: rgba(10, 10, 10, 0.1);
 }
 
 .footer-bottom .copyright span:last-child::after {
